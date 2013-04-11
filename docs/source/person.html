@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>The source code</title>
+  <link href="../resources/prettify/prettify.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="../resources/prettify/prettify.js"></script>
+  <style type="text/css">
+    .highlight { display: block; background-color: #ddd; }
+  </style>
+  <script type="text/javascript">
+    function highlight() {
+      document.getElementById(location.hash.replace(/#/, "")).className = "highlight";
+    }
+  </script>
+</head>
+<body onload="prettyPrint(); highlight();">
+  <pre class="prettyprint lang-js"><span id='Person'>/**
+</span> * @class Person
+ * this is person class
+ */
+function Person() {
+    this.name = '';
+    this.age = 0;
+}
+
+<span id='Person-method-setPerson'>/**
+</span> * @member Person
+ * @method setPerson
+ * set person's info
+ * @param {String} name person's name
+ * @param {Number} age  person's age
+ */
+Person.prototype.setPerson = function(name, age) {
+    this.name = name;
+    this.age = age;
+};
+
+<span id='Person-method-getPerson'>/**
+</span> * @member Person
+ * @method getPerson
+ * return person's info
+ * @return {Object} person's info
+ * @return {String} return.name person's name
+ * @return {Number} return.age  person's age
+ */
+Person.prototype.getPerson = function() {
+    return {
+        name: this.name,
+        age: this.age
+    };
+};
+
+
+<span id='jQuery-tab'>/**
+</span> * @member jQuery
+ * @class jQuery.tab
+ * jQuery plugin for tab
+ */
+$.widget('R.tab', {
+
+<span id='jQuery-tab-property-options'>    /**
+</span>     * @member jQuery.tab
+     * @property {Object} options  tab options
+     */
+    options: {
+        index: 0
+    },
+
+<span id='jQuery-tab-property-counter'>    /**
+</span>     * @member jQuery.tab
+     * @property {Number} counter  the number of tab
+     * @private
+     */
+    _counter: 0,
+
+<span id='jQuery-tab-method-_create'>    /**
+</span>     * @member jQuery.tab
+     * @method _create initialze tab
+     * @private
+     */
+    _create: function() {
+        var foo = &quot;hoge&quot;;
+    },
+
+<span id='jQuery-tab-method-select'>    /**
+</span>     * @member jQuery.tab
+     * @method select select tab
+     * @param {Number} index  tab index
+     */
+    select: function(index) {
+        //select tab function
+    }
+
+});</pre>
+</body>
+</html>
